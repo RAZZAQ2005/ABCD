@@ -1,0 +1,131 @@
+*{
+    padding:0px;
+    margin: 0px;
+}.navBar{
+    background-color: #13ff95;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:2px 15px;
+    column-gap: 20px;
+}
+.navlist{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.navlist a{
+    text-decoration: none;
+    color: rgb(0, 55, 255);
+    width: 80px;
+    padding: 2px 10px;
+    border: 1.5px solid #fc0202;
+    text-align: center;
+    border-radius: 20px;
+}
+.navlist a:hover{
+    background-color: #4213ff;
+    color: #fc0202;
+}
+.navprofile{
+    width: 50px;
+    height: 50px;
+    border-radius:50px;
+}
+   .icon{
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+   }
+ .icon i{
+        color: black;
+        font-size: 32px;
+    }
+   .profilrBody{
+    height: 90vh;
+    background-color: #fc0202;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+   }
+   .profileimage{
+    width: 350px;
+    height: 500px;
+    object-fit: cover;
+   }
+   .text1{
+    font-size:30px ;
+    color:#fff;
+   }
+
+   .text1::first-letter{
+    font-size: 50px;
+    color: #fff;
+   }
+   .text2{
+    font-size: 50px;
+    color: gold;
+    font-style: italic;
+   }
+   .skillslist{
+    display: flex;
+    align-items: center;
+    column-count: 50px;
+    margin-top: 15px;
+    color: rgb(0, 0, 0);
+
+   }
+   .skillslist p{
+    padding: 3px 15px;
+    text-align: center;
+    width: 100px;
+    background-image: linear-gradient(to right,#fff,blue);
+    border-radius: 25px;
+   }
+   .aboutMeBody{
+    width: 70%;
+    margin: 15px auto;
+    font-size: 20px;
+    line-height: 25px;
+   }
+   .title{
+    font-size: 25px;
+    color: deeppink;
+    text-decoration: underline 3px rgb(43, 20, 255) ;
+    text-align: center;
+    margin-bottom: 20px;
+
+   }
+
+
+@media screen and (max-width:700px) {
+   .navBar.active{
+        height: 160px;
+        align-items: flex-start;
+        justify-content: center;
+    } 
+     .navBar .navlist{
+        display: none;
+    }
+   
+    .navBar.active.navlist{
+        display: grid;
+        row-gap: 15px;
+    }
+    .navprofile{
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    .icon{
+        display: block;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+    
+}
